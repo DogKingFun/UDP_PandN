@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+   n:
+     build: ./N
+     container_name: NODE
+   p:
+     build: ./P
+     container_name: PYTHON
