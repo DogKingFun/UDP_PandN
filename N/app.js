@@ -12,11 +12,6 @@ socket.on('message', (buf, rinfo) => {
 
   // sleep
   setTimeout(() => {
-/*
-    socket.send(buf, 0, buf.length, PORT_P, HOST_P, (err, bytes) => {
-      if (err) throw err;
-    });
-*/
     socket.send(buf+buf, 0, 2*buf.length, PORT_P, HOST_P, (err, bytes) => {
       if (err) throw err;
     });
